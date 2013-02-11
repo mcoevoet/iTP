@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Color Picker v1.2</title>
+<link rel="stylesheet" type="text/css" href="Css/ColorPicker.css" />
+<script type="text/javascript" src="Js/CP_Class.js"></script>
+<script type="text/javascript">
+window.onload = function()
+{
+ fctLoad();
+}
+window.onscroll = function()
+{
+ fctShow();
+}
+window.onresize = function()
+{
+ fctShow();
+}
+</script>
+</head>
+
+<body>
+<form name="objForm" method="post action="?">
+<input type="text" size="10" name="f_color" value="" maxlength="7" style="font-family:Tahoma;font-size:x-small;">
+<img src="Img/color.gif" width="21" height="20" border="0" align="absmiddle" onClick="fctShow(document.objForm.f_color);" style="cursor:pointer;">
+<br>
+<br>
+<input type="text" size="10" name="f_color2" value="" maxlength="7" style="font-family:Tahoma;font-size:x-small;">
+<img src="Img/color.gif" width="21" height="20" border="0" align="absmiddle" onClick="fctShow(document.objForm.f_color2);" style="cursor:pointer;">
+<br>
+<br>
+<input type="text" size="10" name="f_color3" value="" maxlength="7" style="font-family:Tahoma;font-size:x-small;">
+<img src="Img/color.gif" width="21" height="20" border="0" align="absmiddle" onClick="fctShow(document.objForm.f_color3);" style="cursor:pointer;">
+</form>
+</body>
+</html>
