@@ -1,0 +1,681 @@
+body {
+	/* margin: 0 auto; */
+	text-align: center;
+	margin-left: auto;
+ 	margin-right: auto;
+	padding: 0;
+	/* Passer le background et le font-family dans le main si on ne veut pas avoir la répétition du fond */
+	background: #FFFFFF url(images/menu01.gif) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height: 100%;
+}
+
+#main {
+	margin: 0 auto;
+	padding: 0;
+	color: #696969;	
+	/* width: 1OO%; */
+	/* width: 1200px; */
+	/* background: #ff0000;*/
+	height: 100%;
+	/*border-left: 1px solid #E1E1E1;
+	border-right: 1px solid #E1E1E1; */	
+}
+
+
+h1, h2, h3 {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #618C04;
+}
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 18px; }
+
+h3 { font-size: 14px; }
+
+#nomPatient {
+	margin: 0;
+	font-weight: normal;
+	color: #000000;
+	font-size: 18px;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 240%;
+	text-align: justify;
+}
+
+ul, ol { }
+
+blockquote { }
+
+a { color: #77B003; }
+
+a:hover { text-decoration: none; }
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 7px 30px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 7px 0 0 30px;
+}
+
+hr { display: none; }
+
+.list1 {
+}
+
+.list1 li {
+	float: left;
+	line-height: normal;
+}
+
+.list1 li img {
+	margin: 0 30px 30px 0;
+}
+
+.list1 li.alt img {
+	margin-right: 0;
+}
+.textarea {
+	border-color: #618C04;
+	border-style: solid;
+	border-width: thin;
+	padding: 3px;
+	background-color: #eeeeee;
+}
+
+#wrapper {
+}
+
+/* Header */
+
+#header-wrapper {
+}
+
+#header {
+	width: 1100px;
+	height: 36px;
+	margin: 0 auto;
+}
+
+
+/* ENTETE */
+
+#entete  {
+	width: 1100px;
+	height: 115px;
+	margin: 0 auto;	
+	overflow: hidden;
+}
+
+#entete tr, td {
+	font-size: 13px;
+	color: #A8A8A8;		
+}
+
+#entete h1 {
+	margin: 0px;
+	line-height: normal;
+/* text-transform: capitalize; */
+	font-weight: normal;
+	text-transform: none;
+/*	font-size: 18px;
+	color: #618C04; */
+}
+
+#entete p {
+	margin-top: -4px;
+	text-transform: lowercase;
+}
+
+#entete h1 {
+	padding-top: 10px;
+	font-size: 48px;
+}
+
+#entete a {
+	text-decoration: none;
+	color: #A8A8A8;
+}
+
+#entete h1 a {
+	text-decoration: none;
+	color: #618C04;
+}
+
+
+#banner {
+	padding-bottom: 20px;
+}
+
+/* Menu */
+
+#menu {
+	display: block;
+	float: left;
+	width: 1100px;
+	height: 43px;
+	background: url(images/menu04.jpg) no-repeat left top;
+	color: #FFFFFF;
+}
+
+#menu span {
+	display: block;
+	float: left;
+	height: 40px;
+	margin: 0;
+	padding: 13px 30px 0px 30px;	
+	background: url(images/menu02-flip.gif) no-repeat left top;
+	text-decoration: none;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	vertical-align: top;
+}
+#menu a {
+	display: block;
+	float: left;
+	height: 40px;
+	margin: 0;
+	padding: 8px 30px 0px 30px;	
+	background: url(images/menu02-flip.gif) no-repeat left top;
+	text-decoration: none;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+#menu a:hover, span:hover { 
+	text-decoration: none;
+	background: url(images/menu02-flip.gif) repeat-X left top;
+}
+
+#menu .current_page_item a {
+}
+
+#menu .first {
+}
+
+/* MENU DEROULANT */
+/* div item caches par defaut */
+#itemVide{
+	height: 21px; /* Pour IE, pas compris pourquoi ... */
+	display: block;
+	float: left;
+	width: 1100px;
+	/* background-color: #FF0000; */ 
+}
+
+.item {
+  	display: none;
+  	width: 1100px;
+}
+
+.item a {
+	display: block;
+	float: left;
+	height: 43px;
+	margin: 0;
+	padding: 13px 20px 0px 20px;	
+	background: url(images/menu02-flip.gif) no-repeat left top;
+	text-decoration: none;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+.item a:hover { 
+	text-decoration: none;
+	background: url(images/menu02-flip.gif) repeat-X left top;
+	height: 43px;
+}
+.lienItem{
+	text-decoration: none;
+	color: #6E6E6E;
+}
+/* styleOverMenu = style du menu lors de l evenement mouseover */
+/* style des liens lors du hover */
+.lienItem:hover, .styleOverMenu{
+	background: url(images/menu02.gif) repeat-X left top;
+	color: #000000;
+}
+/* style du menu lors de l evenement mouseout */
+.styleOutMenu{
+}
+
+/* Page */
+
+#page {
+	/* background-color: #000000; */ 	
+	width: 1230px;	
+	margin: 0px auto;
+	padding: 10px 0px 0px 0px;
+	/* height: 550px; On va prendre la hauteur fournit par le Javascript dans Index.php */	
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto; 	
+}
+#inclPat {
+	/* background-color: #FF0000; */
+	width: 700px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+
+#patient_list {
+/*	background-color: #000000; */
+	float: left;
+	width: 750px;
+	margin: 0px 0px 0px 0px;	
+}
+#step_list {
+/*	background-color: #FF0000; */
+	float: right;
+/*	witdh: 750px; */
+	margin: 0px 10px 10px 0px;
+	padding: 0px 0px 0px 0px;		
+}
+a.lienEtp{
+	text-decoration: none;
+	color: #000000;
+}
+a.lienEtp:hover{
+	font-weight: bold;	
+}
+
+/* Config titre des colonnes du tableau du Workflow */
+table.workflowTable {
+	color: #000000;
+}
+table.workflowTable td, tr{
+	color: #000000;
+}
+
+/* Gestion des info-bulles du Workflow */
+a.linkPatient {
+   position: relative;
+   color: black;
+   text-decoration: none;
+   border-bottom: 1px gray dotted; /* On souligne le texte. */
+}
+a.linkPatient span {
+   display: none; /* On masque l'infobulle. */
+}
+a.linkPatient:hover {
+   background: none; /* Correction d'un bug d'Internet Explorer. */
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+   cursor: help; /* On change le curseur par défaut par un curseur d'aide. */
+}
+a.linkPatient:hover span {
+   display: inline; /* On affiche l'infobulle. */
+   position: absolute;
+   white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+
+   top: 20px; /* On positionne notre infobulle. */
+   left: 50px;
+
+   background: white;
+
+   color: #000000;
+   padding: 3px;
+
+   border: 1px solid #000000;
+   border-left: 4px solid #000000;
+   border-bottom: 4px solid #000000;
+}
+
+/* Pour avoir la forme du pointeur de souris sur toute la ligne */
+tr.workflow {
+	cursor:pointer;
+}
+td.workflow {
+	color: #000000;
+	text-decoration: none;
+}
+.workflow:hover {
+	font-weight: bold;	
+}
+a.linkPatient {
+	color: #000000;
+	text-decoration: none;
+}
+a.linkPatient:hover {
+	font-weight: bold;	
+}
+
+a.triTeam {
+	color: #000000;
+	text-decoration: none;
+}
+a.triTeam:hover {
+	font-weight: bold;	
+}
+
+input.inputFieldSmall {
+	width:75px;
+	border: 1px #618C04 solid;
+	background-color:#ffffff;
+}
+input.inputFieldMiddle {
+	width:150px;
+	border: 1px #618C04 solid;
+	background-color:#ffffff;
+}
+input.inputFieldBig {
+	width:200px;
+	border: 1px #618C04 solid;
+	background-color:#ffffff;
+}
+input.inputStepActionName {
+	width:180px;
+	border: 1px #618C04 dotted;
+	background-color:#eeeeee;
+}
+input.inputStepActionNameSmall {
+	width:50px;
+	border: 1px #618C04 dotted;
+	background-color:#eeeeee;
+}
+input.save{
+	 width: 20px;
+	 height: 20px;
+     border:none;
+     color:#ffffff;
+     background: transparent url('images/save.png') no-repeat top center;
+}
+
+/* GeneratedStep */
+tr.mustFillTR {
+	color:#FF0000;
+}
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 200px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar li {
+	margin-bottom: 5px;
+	padding: 0 0 10px 0px;
+}
+
+#sidebar li ul {
+	margin: 0px 14px;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 12px 0px;
+	border-bottom: 1px solid #E9E8DD;
+	background: url(images/img08.gif) no-repeat left 18px;
+}
+
+#sidebar li li a {
+	padding: 0px 0px 0px 20px;
+	font-weight: normal;
+	color: #808080;
+}
+
+#sidebar li li a:hover {
+	color: #77B003;
+}
+
+#sidebar p {
+	margin: 0;
+	padding: 0px 14px;
+}
+
+#sidebar h2 {
+	height: 30px;
+	margin: 0 0 10px 0px;
+	padding: 6px 0 2px 14px;
+	background: url(images/img05.gif) repeat-x left top;
+	text-transform: capitalize;
+	font-size: 18px;
+	font-weight: normal;
+	color: #618C04;
+}
+
+
+#sidebar p {
+	line-height: 200%;
+}
+
+#sidebar a {
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+#sidebar a:hover { 
+	text-decoration: none; 
+	border-left: 1px solid #618C04;
+}
+
+/* FileLink */
+
+a.FileLink {
+	text-decoration: none;
+	color: #000000;
+}
+a.FileLink:hover {
+	text-decoration: underline;
+}
+
+
+/* Footer */
+
+#footer {
+	position: relative;
+	height: 30px;
+	vertical-align: middle;	
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	bottom:0;
+	left: 0;	
+}
+
+#footer-bgcontent {
+}
+
+#footer p {
+	margin: 0;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	line-height: normal;
+	text-transform: capitalize;
+	font-size: 10px;
+}
+
+.licence{
+	font-family: Times New Roman;
+	font-size: 13px;
+}
+
+.tab_pannes{
+	 /*border-collapse: collapse;*/
+	 border: 1px solid grey;
+	 width: 800px;
+}
+
+.tab_pannes2{
+	 text-align: left;
+	 width: 800px;
+}
+
+.cell_pannes_1{
+	/*border: 1px solid grey;*/
+	width: 150px; 
+}
+.cell_pannes_2{
+	/*border: 1px solid grey;*/
+	width: 150px; 
+	background-color: #F0F0F0;
+}
+.cell_pannes_3{
+	/*border: 1px solid grey;*/
+	width: 150px; 
+}
+.cell_pannes_4{
+	
+	width: 150px; 
+}
+
+.iv_tab{
+border: 1px solid grey;
+/*border-collapse:collapse;*/
+
+}
+
+.tab_settings{
+border: 0px solid grey;
+border-collapse:collapse;
+width: 350px;
+
+}
+
+.tab0{
+border: 1px solid grey;
+/*border-collapse:collapse;*/
+width: 160px;
+}
+
+.tab1{
+border: 1px solid grey;
+/*border-collapse:collapse;*/
+width: 250px;
+
+}
+
+.td_iv_tab{
+border: 1px solid grey;
+height: 30px;
+padding : 1px;
+margin: 1px;
+}
+
+.td1{
+border: 1px solid grey;
+/*height: 30px;*/
+padding : 5px;
+}
+
+.td2{
+border: 1px solid grey;
+/*height: 30px;*/
+padding : 5px;
+}
+
+.td3{
+border: 1px solid grey;
+/*height: 30px;*/
+padding : 5px;
+}
+
+.td4{
+border: 1px solid grey;
+/*height: 30px;*/
+padding : 5px;
+}
+
+.topok{
+background-color: green;
+color: white;
+}
+
+.champvide{
+background-color: yellow;
+}
+
+.champerreur{
+background-color: red;
+}
+
+.invivo_tab{
+position:relative;
+left: -75px;
+border-collapse: collapse; 
+}
+
+.inbox_area{
+margin: 0 auto;
+text-align: left;
+width: 900px;
+height: 300px;
+overflow-y: auto;    
+}
+.read_message_area{
+margin: 0 auto;
+text-align: left;
+width: 800px;
+/*height: 375px;*/
+overflow-y: auto;    
+}
+
+.tab_inbox{
+margin: 0 auto;
+border: 1px solid grey;
+border-collapse:collapse;
+width: 460px;
+}
+.tab_message_text{
+margin: 0 auto;
+border: 1px solid grey;
+border-collapse:collapse;
+width: 760px;
+}
+.tab_message_patient_data{
+margin: 0 auto;
+border: 1px solid grey;
+border-collapse:collapse;
+width: 760px;
+}
+.tab_message_info{
+margin: 0 auto;
+border: 1px solid grey;
+border-collapse:collapse;
+width: 760px;
+}
+
+.tdiv{
+cellpadding: 1px;
+border-collapse: collapse; 
+}
+
+.auxtab{
+border: 1px solid grey;
+border-collapse: collapse; 
+}
