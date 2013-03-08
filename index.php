@@ -315,10 +315,10 @@ else
 		<a href="index.php?toload=calend_view&calend=Calendrier médical" class="lienItem">Calendrier médecins</a>
 	</div>
 	<div onmouseout="mouseOut()" onmouseover="mouseOverItem()" id="itemMenu3" class="item">
-		
+		<a href="#">&nbsp;</a>
 	</div>
 	<div onmouseout="mouseOut()" onmouseover="mouseOverItem()" id="itemMenu4" class="item">
-				
+		<a href="#">&nbsp;</a>	
 	</div>
 	<div onmouseout="mouseOut()" onmouseover="mouseOverItem()" id="itemMenu5" class="item">
 		<a href="index.php?toload=pannes_menu" class="lienItem">Pannes</a>

@@ -62,22 +62,7 @@
 	</tr>
 	<tr>
 		<td colspan="4">&nbsp;</td>
-	</tr>	
-	<tr>
-		<td colspan="4"><h3>In-Vivo dosimetry</h3></td>
-	</tr>
-	<tr>
-		<td colspan="4">&nbsp;</td>
 	</tr>		
-	<tr align="center"> 
-		<td> <a href="index.php?toload=I125_admin"> <IMG src="images/iode125.jpg" height=96 width=96> </a><br> I125 administration </td>
-		<td> <a href="index.php?toload=invivo_admin"> <IMG src="images/invivo-logo.jpg" height=96 width=96> </a><br> Gestion des In-Vivo </td>
-		<td> </td>
-		<td> </td>	
-	</tr>		
-	<tr>
-		<td colspan="4">&nbsp;</td>
-	</tr>	
 	<tr>
 		<td colspan="4"><h3>Administrator</h3></td>
 	</tr>
