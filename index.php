@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 //Variable session créée ou à créer
 if (!isset ($_REQUEST["PHPSESSID"])) {	
